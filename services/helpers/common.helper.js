@@ -330,6 +330,7 @@ exports.cryptoLoanCollateralBalance = async (
   return CryptoBalance;
 };
 
+
 exports.cryptoLoanBorrowBalance = async (
   userId,
   currencyId,
@@ -349,6 +350,7 @@ exports.cryptoLoanBorrowBalance = async (
     lastId: lastId,
     type: type,
   };
+  console.log("balanceUpdations==============", balanceUpdations);
   //** crypto loan balance created */ 
   const CryptoBalance = await CryptoLoanBalanceUpdation.create(balanceUpdations);
   return CryptoBalance;

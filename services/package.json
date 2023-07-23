@@ -32,9 +32,11 @@
     "multer-s3": "^3.0.1",
     "multer-storage-cloudinary": "^4.0.0",
     "multicoin-address-validator": "^0.5.12",
+    "node-cron": "^3.0.2",
     "nodemailer": "^6.9.3",
     "plivo": "^4.49.0",
     "pm2": "^5.3.0",
-    "socket.io": "^4.7.0"
+    "socket.io": "^4.7.0",
+    "ws": "^8.13.0"
   }
 }
