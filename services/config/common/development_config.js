@@ -55,6 +55,8 @@ module.exports = {
 		derivativeCron: "Enable",
 		pushNotification: "Enable",
 		activityNotification: "Disable"
+	},
+	socketUrl: {
+		socket_url: 'https://fibitexchange-api-new.fibitpro.com/',
 	}
-
 }

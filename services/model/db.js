@@ -14,6 +14,7 @@ if (config.caPath != '') {
 mongoose.connection.on('connected', function () {
     // require('../cron/initial.USDTPerpetual').initialCall();
     console.log('Mongoose default connection open');
+    require('../cronSocket/initialLoad').afterDbConnected();
 });
 mongoose.connection.on('error', function (err) {
     console.log('Mongoose default connection error: ' + err);
@@ -45,3 +46,4 @@ require("./CryptoLoanActivityLogs.model");
 require("./CryptoLoanBalanceUpdation.model");
 require("./CryptoLoanBorrow.model");
 require("./repayment.model");
+require("./Pairs");

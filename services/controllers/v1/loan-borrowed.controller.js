@@ -1,5 +1,6 @@
 const { successResponse, errorResponse } = require("../../helpers/response");
-const loanBorrowedServices = require("../../services/loan-borrowed.services");
+const { loanBorrowedServices } = require("../../services");
+// const loanBorrowedServices = require("../../services/loan-borrowed.services");
 
 const BorrowLoanCreated = async (req, res) => {
     try {
